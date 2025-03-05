@@ -1,0 +1,11 @@
+/node_modules
+/.next
+/.vscode
+/.idea
+/.DS_Store
+/.env
+/.env.local
+/.cache
+/coverage
+/coverage/
+/coverage*/
