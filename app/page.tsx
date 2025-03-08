@@ -1,9 +1,14 @@
+import Home from "./(site)";
 import RootLayout from "./layout";
 
-export default function Home() {
+const Root = () => {
   return (
     <RootLayout>
-      <main>shervan</main>
+      <main>
+        <Home />
+      </main>
     </RootLayout>
   );
-}
+};
+
+export default Root;
