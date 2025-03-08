@@ -7,7 +7,7 @@ export default function RootLayout({
 }>) {
   return (
     <html>
-      <body className="max-w-7xl mx-auto px-10">{children}</body>
+      <body className="max-w-[1500px] mx-auto px-10">{children}</body>
     </html>
   );
 }

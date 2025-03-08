@@ -1,8 +1,11 @@
+import SiteLayout from "@/src/layouts/site";
+import Hero from "./_components/hero";
+
 const Home = () => {
   return (
-    <div>
-      <h2 className="font-bold">Welcome to SmartSheet</h2>
-    </div>
+    <SiteLayout>
+      <Hero />
+    </SiteLayout>
   );
 };
 
