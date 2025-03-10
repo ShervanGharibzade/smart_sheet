@@ -6,7 +6,7 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <div>
-      <div className="bg-gradient-to-r via-zinc-950 from-black/30 to-blue-800 py-20 text-center my-16 rounded-lg">
+      <div className="bg-gradient-to-r via-zinc-80 from-black/30 to-blue-800 py-20 text-center my-16 rounded-lg shadow-xl shadow-zinc-800">
         <div className="max-w-3xl mx-auto px-6">
           <h1 className="text-4xl font-bold text-white mb-4">
             Smarsheet: Data Analysis Made Simple

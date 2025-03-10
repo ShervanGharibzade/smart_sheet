@@ -4,11 +4,12 @@ import { FC, ReactNode, ElementType } from "react";
 type ButtonProps = {
   children?: ReactNode;
   onClick?: () => void;
-  variant?: "primary" | "secondary" | "danger" | "success";
+  variant?: "primary" | "secondary" | "danger" | "success" | "outline";
   size?: "sm" | "md" | "lg";
   className?: string;
   disabled?: boolean;
-  href: string;
+  type?: string;
+  href?: string;
   as?: ElementType;
 };
 
@@ -19,7 +20,8 @@ const Button: FC<ButtonProps> = ({
   size = "md",
   className = "",
   disabled = false,
-  href = "",
+  href,
+  type,
   as: Component = "button",
 }) => {
   const baseStyles =
@@ -30,6 +32,8 @@ const Button: FC<ButtonProps> = ({
     secondary: "bg-gray-500 text-white hover:bg-gray-600 focus:ring-gray-300",
     danger: "bg-red-500 text-white hover:bg-red-600 focus:ring-red-300",
     success: "bg-green-500 text-white hover:bg-green-600 focus:ring-green-300",
+    outline:
+      "border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white focus:ring-blue-500", // Outline variant
   };
 
   const sizeStyles: Record<string, string> = {
@@ -41,6 +45,7 @@ const Button: FC<ButtonProps> = ({
   return (
     <Component
       onClick={onClick}
+      type={type}
       disabled={Component === "button" ? disabled : undefined}
       href={href}
       className={twMerge(

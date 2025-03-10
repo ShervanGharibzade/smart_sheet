@@ -4,7 +4,7 @@ const pageRoutes = {
   dashboard: "/dashboard",
   home: "/",
   login: "/auth/login",
-  singup: "/auth/singup",
+  singup: "/auth/signup",
   resetPassword: "/auth/reset-password",
 };
 const apiRoutes = {};
